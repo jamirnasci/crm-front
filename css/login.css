@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+
+*{
+    font-family: 'Inter', sans-serif;
+}
+html, body {
+    height: 100%;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;    
+    color: rgb(49, 49, 49);
+}
+
+.form-box{
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(45deg, rgb(54, 97, 226), rgb(110, 148, 255), lightblue);
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px darkgray;
+    overflow: hidden;
+}
+
+form {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(45deg, wheat, rgb(252, 221, 165), rgb(247, 205, 126)); 
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px gray;
+    min-width: 400px;
+    min-height: 400px;
+}
+
+form [type="text"], [type="password"]{
+    outline: none;
+    border: solid 1px lightgray;
+    border-radius: 10px;
+    width: 80%;
+    text-indent: 5px;
+    font-size: 16pt;
+}
+
+form > * {
+    margin: 10px;
+}
+
+#submit{
+    background: linear-gradient(45deg, green, limegreen);
+    color: white;
+    border-radius: 5px;
+    font-size: 18pt;
+    width: 80%;
+    padding: 10px;
+    border: none;
+    box-shadow: 0px 0px 10px gray;
+}
+
+#createBtn{
+    background: linear-gradient(45deg, orangered, orange);
+    color: white;
+    border-radius: 5px;
+    font-size: 18pt;
+    min-width: 250px;
+    padding: 10px;
+    border: none;
+    box-shadow: 0px 0px 10px gray;
+}
+
+.sign-up-box{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    color: white;   
+}
+.sign-up-box > * {
+    margin: 5px;
+}
+
+@media screen and (max-width:900px) {
+    .form-box{
+        width: 90%;
+        flex-direction: column;
+    }
+}

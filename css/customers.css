@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(45deg, rgb(54, 97, 226), rgb(110, 148, 255), lightblue);
+    width: 100%;
+    min-height: 50px;
+}
+
+.side-btn {
+    display: flex;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.side-btn>* {
+    width: 80%;
+    height: 2px;
+    background-color: white;
+    margin: 5px;
+}
+
+.side-menu-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.side-menu-header > * {
+    margin: 15px;
+}
+
+.close-side-menu{
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    min-width: 50px;
+    font-size: large;
+    border: solid 1px white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.close-side-menu:hover{
+    background-color: red;
+}
+.link-box{
+    display: none;
+    position: absolute;
+	background: linear-gradient(45deg, rgb(54, 97, 226), rgb(110, 148, 255), lightblue);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 50%;
+    background-color: gray;
+    opacity: 0.9;
+}
+
+.link-box > a {
+    display: block;
+    padding: 15px;
+    font-size: 18px;	
+    outline: none;
+    text-decoration: none;
+    color: white;
+}
+
+.link-box>a:hover {
+	background-color:royalblue;
+}
+
+.img-box {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logout-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.rounded-photo {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 5px;
+    box-shadow: 0px 0px 10px gray;
+	border: solid 1px darkgray;
+}
+
+.logout-box>button {
+    background-color: red;
+    color: white;
+    font-size: 16pt;
+    border: none;
+    box-shadow: 0px 0px 10px gray;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+#my-details-btn{
+	background-color:green;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 10px lightgrey;
+    width: 30%;
+    margin: 10px;
+    border-radius: 20px;
+    background: linear-gradient(45deg, wheat, rgb(252, 221, 165), rgb(247, 205, 126));
+}
+
+.client-box>* {
+    margin: 10px;
+}
+
+.client-name-photo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.check-btn {
+    background: linear-gradient(45deg, green, limegreen);
+    border: none;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 18pt;
+    border-radius: 5px;
+	cursor:pointer;
+}
+
+.check-btn:hover{
+	background: linear-gradient(45deg, limegreen, green);
+}
+
+.situation-p {
+    color: orangered;
+}
+
+.situation-ok {
+    color: green;
+}
+
+.situation-l {
+    color: red;
+}
+
+@media screen and (max-width:900px) {
+
+    body,
+    html {
+        height: 100%;
+    }
+
+    .content-container {
+        flex-direction: column;
+    }
+
+    .client-box {
+        width: 80%;
+    }
+    .link-box{
+        width: 60%;
+    }
+}
