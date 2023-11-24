@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customers</title>
+    <link rel="stylesheet" href="./css/customers.css">
+    <link rel="stylesheet" href="./css/client.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="side-btn">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="logout-box">
+            <img class="rounded-photo"
+                src="https://th.bing.com/th/id/R.6b0022312d41080436c52da571d5c697?rik=EBuuBNxzjeKhkQ&pid=ImgRaw&r=0"
+                alt="">
+            <button id="my-details-btn">My Account</button>
+            <button id="logout-btn">Log out</button>
+        </div>
+    </nav>
+    <div class="content-container">
+        <div class="link-box">
+            <div class="side-menu-header">
+                <h1>Menu</h1>
+                <button class="close-side-menu">X</button>
+            </div>
+            <a href="">New Customer</a>
+            <a href="">Statistics</a>
+            <a href="">Search</a>
+            <a href="">Today</a>
+        </div>
+        <h1>New Client</h1>
+        <form action="" method="get">
+            <div class="form-container">
+                <div>
+                    <label for="nomeCompleto">Nome Completo:</label><br>
+                    <input type="text" id="nomeCompleto" name="nomeCompleto"><br><br>
+
+                    <label for="cpf">CPF:</label><br>
+                    <input type="text" id="cpf" name="cpf"><br><br>
+
+                    <label for="dataNascimento">Data de Nascimento:</label><br>
+                    <input type="date" id="dataNascimento" name="dataNascimento"><br><br>
+
+                    <label for="idade">Idade:</label><br>
+                    <input type="number" id="idade" name="idade"><br><br>
+
+                    <label for="cidade">Cidade:</label><br>
+                    <input type="text" id="cidade" name="cidade"><br><br>
+
+                    <label for="estado">Estado:</label><br>
+                    <input type="text" id="estado" name="estado"><br><br>
+                </div>
+                <div>
+                    <label for="limiteCredito">Limite de Crédito Desejado:</label><br>
+                    <input type="number" id="limiteCredito" name="limiteCredito"><br><br>
+
+                    <label for="parcelaDesejada">Parcela Desejada:</label><br>
+                    <input type="number" id="parcelaDesejada" name="parcelaDesejada"><br><br>
+
+                    <label for="descricao">Descrição:</label><br>
+                    <textarea id="descricao" name="descricao" rows="4" cols="50"></textarea><br><br>
+
+                    <label for="dataAgendamento">Data de Agendamento:</label><br>
+                    <input type="date" id="dataAgendamento" name="dataAgendamento"><br><br>
+                </div>
+            </div>            
+            <input class="check-btn" id="submit-btn" type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+<script>
+    $('.side-btn').on('click', () => {
+        $('.link-box').fadeIn(500)
+    })
+    $('.close-side-menu').on('click', () => {
+        $('.link-box').fadeOut(200)
+    })
+</script>
+
+</html>

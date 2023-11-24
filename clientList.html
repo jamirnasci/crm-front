@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customers</title>
+    <link rel="stylesheet" href="./css/customers.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div class="side-btn">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="logout-box">
+            <img class="rounded-photo" src="https://th.bing.com/th/id/R.6b0022312d41080436c52da571d5c697?rik=EBuuBNxzjeKhkQ&pid=ImgRaw&r=0" alt="">
+            <button id="my-details-btn">My Account</button>
+			<button id="logout-btn">Log out</button>
+        </div>
+    </nav>
+    <div class="content-container">
+        <div class="link-box">
+            <div class="side-menu-header">
+                <h1>Menu</h1>
+                <button class="close-side-menu">X</button> 
+            </div>        
+            <a href="">New Customer</a>
+            <a href="">Statistics</a>
+            <a href="">Search</a>
+            <a href="">Today</a>
+        </div>
+        <div class="client-box">
+            <div class="client-name-photo">
+                <img class="rounded-photo" src="https://th.bing.com/th/id/R.6b0022312d41080436c52da571d5c697?rik=EBuuBNxzjeKhkQ&pid=ImgRaw&r=0" alt="">
+                <h1>Client Name</h1>
+            </div>
+            <p>Short description about customer...</p>
+            <h2>Situation:<span class="situation-l">Late</span></h2>
+            <input class="check-btn" type="button" value="Check">
+        </div>
+        <div class="client-box">
+            <div class="client-name-photo">
+                <img class="rounded-photo" src="https://th.bing.com/th/id/R.6b0022312d41080436c52da571d5c697?rik=EBuuBNxzjeKhkQ&pid=ImgRaw&r=0" alt="">
+                <h1>Client Name</h1>
+            </div>
+            <p>Short description about customer...</p>
+            <h2>Situation:<span class="situation-ok">Ok</span></h2>
+            <input class="check-btn" type="button" value="Check">
+        </div>
+        <div class="client-box">
+            <div class="client-name-photo">
+                <img class="rounded-photo" src="https://th.bing.com/th/id/R.6b0022312d41080436c52da571d5c697?rik=EBuuBNxzjeKhkQ&pid=ImgRaw&r=0" alt="">
+                <h1>Client Name</h1>
+            </div>
+            <p>Short description about customer...</p>
+            <h2>Situation:<span class="situation-ok">Ok</span></h2>
+            <input class="check-btn" type="button" value="Check">
+        </div>
+        <div class="client-box">
+            <div class="client-name-photo">
+                <img class="rounded-photo" src="https://th.bing.com/th/id/R.6b0022312d41080436c52da571d5c697?rik=EBuuBNxzjeKhkQ&pid=ImgRaw&r=0" alt="">
+                <h1>Client Name</h1>
+            </div>
+            <p>Short description about customer...</p>
+            <h2>Situation:<span class="situation-p">Pending</span></h2>
+            <input class="check-btn" type="button" value="Check">
+        </div>
+    </div>
+</body>
+<script>
+    $('.side-btn').on('click', ()=>{
+        $('.link-box').fadeIn(500)
+    })
+    $('.close-side-menu').on('click', ()=>{
+        $('.link-box').fadeOut(200)
+    })
+</script>
+</html>
